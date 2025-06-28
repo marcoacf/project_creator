@@ -1,0 +1,60 @@
+estruturas:
+  fastapi:
+    diretorios:
+      - app
+      - app/routes
+      - app/models
+      - app/services
+      - tests
+    arquivos:
+      - requirements.txt
+      - .gitignore
+      - README.md
+  etl:
+    diretorios:
+      - src
+      - src/extract
+      - src/transform
+      - src/load
+      - data/raw
+      - data/processed
+    arquivos:
+      - requirements.txt
+      - .gitignore
+      - README.md
+
+opcionais:
+  criar_gitignore: true
+  criar_venv: true
+  instalar_requisitos: false
+
+templates:
+  readme:
+    fastapi: |
+      # Projeto FastAPI
+
+      Este projeto foi criado com FastAPI.
+
+      ## Estrutura
+      - `app/`: Lógica da aplicação
+      - `tests/`: Testes automatizados
+
+      ## Como rodar
+      ```bash
+      uvicorn app.main:app --reload
+      ```
+
+    etl: |
+      # Projeto ETL
+
+      Estrutura básica de projeto ETL com as pastas `extract`, `transform` e `load`.
+
+      ## Como usar
+
+      - Coloque os dados em `data/raw`
+      - Scripts em `src/`
+
+      ## Requisitos
+      ```bash
+      pip install -r requirements.txt
+      ```
